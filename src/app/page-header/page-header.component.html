@@ -1,0 +1,10 @@
+<div class="header">
+    <div class="page-header">
+        <div class="btn-container">
+            <a *ngIf="getLocation().indexOf('search') == 1" [routerLink]="['/favorites']" class="btn btn-primary">Избранное</a>
+            <a *ngIf="getLocation().indexOf('favorites') == 1" [routerLink]="['/search']" class="btn btn-primary">Главная</a>
+            <a *ngIf="getLocation().indexOf('single') == 1" [routerLink]="['/search']" class="btn btn-primary">Главная</a>
+            <a *ngIf="getLocation().indexOf('single') == 1" [routerLink]="['/favorites']" class="btn btn-primary">Избранное</a>
+        </div>
+    </div>
+</div>
